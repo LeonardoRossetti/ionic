@@ -1,0 +1,15 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Saldo</ion-title>
+        <button menuToggle ion-button icon-left>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <h1 class="texto-destaque">
+        {{saldo | currency:'BRL':true}}
+    </h1>
+</ion-content>

@@ -1,0 +1,23 @@
+<ion-header>
+
+    <ion-navbar>
+        <button (click)="cancel()" style="float:right;">
+            <ion-icon ios="ios-close" md="md-close" name="close"></ion-icon>
+        </button>
+
+        <ion-title>Add Conta</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        <ion-item>
+            <ion-label>Descrição</ion-label>
+            <ion-input type="text" [(ngModel)]="conta.descricao"></ion-input>
+        </ion-item>
+    </ion-list>
+    <button ion-button block color="light" (click)="salvar()">Salvar</button>
+
+</ion-content>
